@@ -1,20 +1,27 @@
 <div align="center">
 
-<img src="assets/icon.png" width="128" height="128" alt="Notchly Icon" style="border-radius: 28px; box-shadow: 0 16px 36px rgba(0,0,0,0.4);" />
+<img src="assets/icon.png" width="130" height="130" alt="Notchly App Icon" style="border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.45);" />
 
 # Notchly
 
-**A native macOS Dynamic Island, desktop constellation lyric visualizer, and daily-driver utility.**
+### Turn your MacBook notch into a living media island.
 
-[![macOS 13+](https://img.shields.io/badge/macOS-13.0%2B%20(Ventura%2C%20Sonoma%2C%20Sequoia)-black?style=for-the-badge&logo=apple)](https://www.apple.com/macos/)
-[![Apple Silicon & Intel](https://img.shields.io/badge/Universal%20Binary-Apple%20Silicon%20%2F%20Intel-blue?style=for-the-badge)](https://www.apple.com)
-[![Privacy First](https://img.shields.io/badge/Privacy-Zero%20Microphone%20Access-emerald?style=for-the-badge)](https://github.com/neerjain2008/Notchly)
+A lightweight macOS Dynamic Island, desktop constellation lyric visualizer, and ambient music companion built natively in Swift & SwiftUI.
 
 <br/>
 
-### [⬇️ Download Notchly v1.0 (.dmg)](https://github.com/neerjain2008/Notchly/releases/latest)
+[![macOS 13+](https://img.shields.io/badge/macOS-13.0%2B%20(Ventura%20%7C%20Sonoma%20%7C%20Sequoia)-000000?style=for-the-badge&logo=apple&logoColor=white)](https://www.apple.com/macos/)
+[![Apple Silicon & Intel](https://img.shields.io/badge/Architecture-Universal%20Binary-0071e3?style=for-the-badge)](https://www.apple.com)
+[![Privacy First](https://img.shields.io/badge/Privacy-Zero%20Microphone%20Access-00C853?style=for-the-badge)](https://github.com/neerjain2008/Notchly)
+[![License](https://img.shields.io/badge/Release-v1.0.0-FF6D00?style=for-the-badge)](https://github.com/neerjain2008/Notchly/releases/latest)
 
 <br/>
+
+<a href="https://github.com/neerjain2008/Notchly/releases/latest">
+  <img src="https://img.shields.io/badge/Download-Notchly%20v1.0%20(.dmg)-0071e3?style=for-the-badge&logo=apple&logoColor=white" height="42" alt="Download Notchly DMG" />
+</a>
+
+<br/><br/>
 
 ![Notchly Desktop](assets/preview.png)
 
@@ -22,46 +29,53 @@
 
 ---
 
-## 🌟 The Ultimate Music & Notch Companion for Mac
+## ⚡ What is Notchly?
 
-**Notchly** transforms your MacBook's hardware camera notch into a fluid, ambient Dynamic Island and brings your desktop to life with live constellation lyrics and sound-reactive edge lighting. Crafted purely in Swift & SwiftUI for high-performance macOS workflows, it operates with zero impact on battery life and respects your privacy with strictly local system audio capture.
+Most MacBook notches just sit there. **Notchly** transforms the camera bezel into an Apple-grade Dynamic Island, turns your desktop into a celestial lyric visualizer, and surrounds your screen with sound-reactive neon lighting.
+
+Built from scratch in pure Swift and SwiftUI with **zero external dependencies**, zero background battery drain, and **strictly zero microphone access**.
 
 ---
 
-## ✨ Features
+## ✨ Features That Feel Like Magic
 
-### 🏝️ Notch-Hugging Dynamic Island
-* **Seamless Bezel Silhouette**: Hugs the physical camera notch on 14" & 16" MacBook Pro and MacBook Air displays, reserving the hardware cutout with zero occlusion.
-* **Fluid Spring Expansion**: Hover over the notch or press <kbd>⌥ Option</kbd> + <kbd>N</kbd> to reveal a rich 480pt media console with full playback controls, interactive track scrubbing, and volume/brightness sliders.
-* **Smart Album Artwork**: Displays high-resolution square album artwork in the expanded notch, an animated spinning vinyl record in the collapsed notch wing, and a fallback music badge when offline.
-
-### ⚡ Real-Time Beat Edge Glow
-* **System-Audio Beat Detection**: Analyzes live system audio output in real-time via `ScreenCaptureKit` to pulse vibrant ambient light around your display's edges.
-* **Zero Microphone Access Required**: Operates strictly on system audio output—Notchly **never** requests or accesses your physical microphone.
-* **Adaptive Color Harmony**: The edge glow palette automatically adapts to the vibrant dominant colors of the song currently playing.
+### 🏝️ Precision Notch Dynamic Island
+* **Hardware-Calibrated**: Sits flush alongside the MacBook camera notch, reserving the physical lens cutout with zero obstruction.
+* **Spring Expansion**: Hover over the notch or hit <kbd>⌥ Option</kbd> + <kbd>N</kbd> to fluidly expand into a 480pt media hub.
+* **Live Album Art**: Renders vibrant 46×46 rounded album artwork tiles with intelligent fallback badges.
+* **Collapsed Notch Wings**: While closed, the left ear spins an animated vinyl record with the track's album art, while the right ear features real-time audio visualizer bars or your live focus countdown.
+* **Interactive Timeline**: Real-time scrubbing, precise track position, and custom color accents extracted dynamically from each song's album palette.
+* **Adjustable Calibration**: Fine-tune notch width, height, and horizontal offset via built-in sliders to match any MacBook model perfectly.
 
 ### 🌌 Desktop Constellation Lyrics
-* **Wallpaper-Layer Star Visualizer**: Projects synchronized lyrics directly over your desktop wallpaper as glowing star nodes connected by delicate constellation lines.
-* **High-Contrast Typography**: The active singing word illuminates in a bold 34pt glow with a protective dark text shadow for effortless readability over bright or detailed wallpapers.
-* **Smart Title & Lyric Resolution**: Automatically cleans up title clutter (such as Bollywood/soundtrack tags and remastered suffixes) and searches lrclib.net with automatic local caching for instantaneous 0ms repeat loads.
-* **60fps Interpolation**: Uses high-precision local time interpolation between playback syncs for butter-smooth word transitions without AppleScript lag.
+* **Celestial Lyric Mapping**: Projects synchronized LRC lyrics directly onto your desktop wallpaper as glowing star nodes linked by luminous constellation lines.
+* **High-Contrast Typography**: The active singing word illuminates in 34pt bold typography with a dual black drop shadow for effortless legibility over light or dark wallpapers.
+* **Bollywood & Noise Sanitization**: Cleans cluttered track titles (e.g. `(From "...")`, `[Remastered]`, `feat.`) to reliably locate lyrics for both Western and Bollywood/Hindi songs via lrclib.
+* **60fps Time Interpolation**: Smooth local time interpolation advances lyric highlights at 60fps with zero AppleScript lag, backed by instant disk caching for 0ms repeat loads.
+
+### ⚡ Sound-Reactive Beat Edge Glow
+* **System Audio Beat Detection**: Analyzes live audio transients via macOS `ScreenCaptureKit` to pulse vibrant ambient light around the perimeter of your display in sync with the beat.
+* **100% Privacy Guarantee**: Operates strictly on system audio output—Notchly **never** requests or accesses your physical microphone or screen video.
+* **Palette-Matched Colors**: Automatically extracts the dominant vibrant hues from the current album cover to paint your screen edges in matching neon tones.
 
 ### 💽 Draggable Desktop Turntable
-* **Retro Desktop Vinyl Platter**: A vintage vinyl record player widget anchored to your desktop layer.
-* **Interactive & Movable**: Drag the turntable anywhere on your screen; click the spinning record to toggle play and pause.
-* **Rotating Album Label**: Center label features the active track's cover art and rotates at a realistic 33⅓ RPM with an animated metallic tonearm.
+* **Wallpaper-Layer Platter**: A retro vinyl record player anchored gracefully directly above your desktop wallpaper.
+* **Interactive Controls**: Drag the turntable anywhere on your screen; click the spinning record to play or pause.
+* **Spinning Album Label**: The center label features the active track's cover art and rotates at 33⅓ RPM with an animated tonearm.
 
-### 🗂️ Notch File Shelf
-* **Instant Drag-and-Drop Holding Area**: Drag any file, screenshot, or URL up to the notch to automatically expand the Dynamic Island and store the item in a temporary shelf.
-* **Fast Multi-App Workflow**: Easily drag files back out into Mail, Slack, Discord, or Finder, open them directly, or clear the shelf with a single click.
+### 🎚️ Screen-Edge Volume & Brightness Sliders
+* **Ambient Vertical Bars**: Sleek, non-intrusive glowing vertical sliders that appear on the screen edges whenever you adjust display brightness or system volume.
 
-### ⏱️ 25-Minute Focus Timer
-* **Built-in Pomodoro Mode**: Start, pause, and reset 25-minute focus sessions directly from the expanded notch.
-* **Glanceable Wing Badge**: Displays a discrete live countdown timer (`24:15`) in the collapsed notch wing while you work.
+### ⏱️ 25-Minute Focus Timer (Pomodoro)
+* **One-Click Focus**: Start, pause, and reset 25-minute Pomodoro sessions directly from the expanded notch pill bar.
+* **Glanceable Wing Countdown**: Displays a discrete live countdown timer (`24:15`) in the collapsed notch wing while you work, playing a subtle glass chime at 00:00.
 
 ### 🔋 MagSafe & Battery HUD
-* **Charging Alerts**: Displays a subtle MagSafe-style HUD banner (`⚡ Charging • 84%`) beneath the camera notch whenever AC power is connected or disconnected.
-* **AirPods & Bluetooth Level**: Shows connected headphone names and real-time battery percentages automatically.
+* **Charging Alerts**: Displays a subtle MagSafe-inspired HUD alert (`⚡ Charging • 84%`) beneath the camera notch whenever AC power is connected or disconnected.
+* **AirPods & Bluetooth Level**: Automatically displays connected headphone names and real-time battery percentages.
+
+### 📊 Weekly Listening Diary
+* **Listening Stats**: Tracks your weekly listening hours with an in-notch status pill and a diary of your recently played songs.
 
 ---
 
@@ -73,7 +87,7 @@ Control your media system-wide from any app or fullscreen workspace:
 | :--- | :--- | :--- |
 | <kbd>⌥ Option</kbd> + <kbd>Space</kbd> | **Play / Pause** | Toggle playback in Spotify, Apple Music, or Browser media |
 | <kbd>⌥ Option</kbd> + <kbd>→</kbd> | **Next Track** | Skip to the next song |
-| <kbd>⌥ Option</kbd> + <kbd>←</kbd> | **Previous Track** | Return to the previous song or restart current track |
+| <kbd>⌥ Option</kbd> + <kbd>←</kbd> | **Previous Track** | Return to previous song or restart current track |
 | <kbd>⌥ Option</kbd> + <kbd>N</kbd> | **Toggle Notch** | Instantly expand or collapse the Notchly Dynamic Island |
 
 ---
@@ -88,16 +102,15 @@ Control your media system-wide from any app or fullscreen workspace:
 
 ## 📥 Quick Installation (macOS 13+)
 
-1. **Download Notchly**: Grab the latest **[Notchly.dmg](https://github.com/neerjain2008/Notchly/releases/latest)** installer.
+1. **Download**: Grab the latest **[Notchly.dmg](https://github.com/neerjain2008/Notchly/releases/latest)**.
 2. **Install**: Open `Notchly.dmg` and drag the **Notchly** app icon into your **Applications** folder.
 3. **First Launch (Gatekeeper)**:
    * Because Notchly is independently distributed, **Right-Click** (or Control-click) `Notchly.app` in `/Applications` and select **Open**.
-   * Click **Open** in the macOS confirmation dialog. (You only need to do this once).
-4. **Grant Audio Permission for Beat Glow**:
-   * On first launch or when toggling Beat Glow, macOS will request **Screen & System Audio Recording** access.
-   * Open **System Settings → Privacy & Security → Screen & System Audio Recording** and toggle **Notchly** to **ON**.
-   * *Note: Notchly uses this permission exclusively to capture system audio output for the edge visualizer. It never records your screen video or uses your microphone.*
-5. **Start Listening**: Play any track in Spotify, Apple Music, or YouTube and watch Notchly come alive!
+   * Click **Open** in the macOS dialog. *(You only need to do this once)*.
+4. **Grant Audio Access for Beat Glow**:
+   * When prompted (or when toggling Beat Glow on), open **System Settings → Privacy & Security → Screen & System Audio Recording** and toggle **Notchly** to **ON**.
+   * *Notchly uses this permission exclusively to analyze system audio output for the edge visualizer. It never accesses your microphone or records screen video.*
+5. **Enjoy**: Play any song in Spotify, Apple Music, or YouTube and watch Notchly come alive!
 
 ---
 
